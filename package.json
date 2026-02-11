@@ -1,0 +1,55 @@
+{
+  "name": "openclaw-mcp-bridge",
+  "description": "OpenClaw MCP Bridge Plugin - Connect any MCP server to OpenClaw",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoji/openclaw-mcp-bridge.git"
+  },
+  "keywords": [
+    "openclaw",
+    "mcp",
+    "model-context-protocol",
+    "ai",
+    "vision",
+    "bridge",
+    "plugin"
+  ],
+  "author": "Xiao Ji <xiaoji@openclaw.ai>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/xiaoji/openclaw-mcp-bridge/issues"
+  },
+  "homepage": "https://github.com/xiaoji/openclaw-mcp-bridge#readme",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "winston": "^3.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/winston": "^2.4.4",
+    "typescript": "^5.7.0",
+    "ts-node": "^10.9.0",
+    "eslint": "^9.0.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "jest": "^30.0.0",
+    "@types/jest": "^30.0.0",
+    "ts-jest": "^30.0.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
